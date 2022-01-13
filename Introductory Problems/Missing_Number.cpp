@@ -10,13 +10,13 @@ int main()
     ll n;
     cin>>n;
 
-    for(ll i=1;i<n;i++)
+    for(int i=1;i<n;i++)
     {
         ll x;
         cin>>x;
         v[x]=1;
     }
-    for(ll i=1;i<v.size();i++)
+    for(int i=1;i<v.size();i++)
     {
         if(v[i]!=1)
         {
