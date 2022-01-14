@@ -19,11 +19,6 @@ int main()
         v.push_back(x);
     }
 
-    // for(auto x:v)
-    //     cout<<x<<" ";
-    // cout<<endl;
-
-
     ll s=0,m=v[0];
 
     for(int i=1;i<n;i++)
