@@ -9,7 +9,6 @@ ll solve()
     ll x,y;
     cin>>x>>y;
 
-
     if(x>y) // below diagonal
     {
         ll d=(x*x)-(x-1);
