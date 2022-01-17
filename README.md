@@ -1,4 +1,4 @@
-# CSES Problem Set
+# CSES Problem Set Solutions
 My daily CSES streak
 
 I am trying to learn new techniques and improve my problem solving. In order to do so, I have decided to solve the CSES problem set. I will be uploading the solutions of the 
