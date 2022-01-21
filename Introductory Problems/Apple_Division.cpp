@@ -22,7 +22,7 @@ int main()
     }
 
     ll a = 0, b = 0, dif = INT64_MAX;
-
+    
     for (int i = 0; i < (1 << n); i++)
     {
         a = 0;
@@ -34,10 +34,8 @@ int main()
             else
                 b = b + v[j];
         }
-
         dif = min(dif, abs(a - b));
     }
-
     cout << dif << endl;
 
     return 0;
