@@ -5,30 +5,30 @@ using ull = unsigned long long;
 #define ff first
 #define ss second
 #define modnum 1000000007
-// SET
+// multiset
 int main()
 { 
     ios_base::sync_with_stdio(false);
     
     int n,m;
     cin>>n>>m;
-
-    set<pair<int,int>> prices;  
-
+ 
+    multiset<int> prices;  
+ 
     for(int i=0;i<n;i++)
     {
         int x;
         cin>>x;
-        prices.insert({x,i});
+        prices.insert(x);
     }
-
+ 
     for(int i=0;i<m;i++)
     {
         int limit;
         cin>>limit;
-
-        set<pair<int,int>>::iterator  lower;
-        lower=prices.lower_bound({limit+1,0});
+ 
+        multiset<int>::iterator  lower;
+        lower=prices.lower_bound(limit+1);
        
         if(lower==prices.begin())
         {
@@ -37,10 +37,10 @@ int main()
         else
         {
             lower--;
-            cout<<(*lower).ff<<endl;
+            cout<<*lower<<endl;
             prices.erase(lower);
         }
     }
-
+ 
     return 0;
 }
