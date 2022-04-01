@@ -5,7 +5,7 @@ using ull = unsigned long long;
 #define ff first
 #define ss second
 #define modnum 1000000007
-
+// hello
 vector<string> gray(int n)
 {
     vector<string> res;
